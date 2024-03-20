@@ -804,3 +804,138 @@ footer {
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 700px;
+    }
+
+    .nav-contact {
+        a {
+            display: none;
+        }
+    }
+
+    main {
+        .hero {
+            height: 600px;
+
+            .hero-section {
+                .hero-info-left {
+
+                    h1 {
+                        font-size: 60px;
+
+                        .bold-h1-hero {
+                            font-size: 120px;
+                        }
+                    }
+
+                    p {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+
+            img {
+                display: none;
+            }
+
+            .hero-info-right {
+                display: none;
+
+                .long-line-hero {
+                    display: none;
+                }
+
+                li {
+                    display: none;
+                }
+            }
+        }
+
+        .aboutMe {
+            height: 1600px;
+
+            .container {
+                max-width: 700px;
+            }
+
+            .divAbout {
+
+                .about-me-info {
+
+                    .about-me-left {
+                        width: 100%;
+
+                        h2 {
+                            font-size: var(--h3);
+                        }
+                    }
+
+                    .about-me-right {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .experience {
+            height: 800px;
+
+            .divExperience {
+
+                .experience-left {
+                    width: 100%;
+
+                    .experience-section {
+                        margin-left: 0;
+                    }
+                }
+
+                .experience-right {
+                    display: none;
+                }
+            }
+        }
+
+        .education {
+            height: 800px;
+
+            .divEducation {
+
+                .education-left {
+                    width: 100%;
+
+                    .education-section {
+                        margin-left: 0;
+                    }
+                }
+
+                .education-right {
+                    display: none;
+                }
+            }
+        }
+
+        .contact {
+            height: 1000px;
+            width: 100%;
+
+            .parallax {
+                .container {
+                    .contact-container {
+                        width: 100%;
+                        height: 700px;
+
+                        .contact-right {
+                            .contact-inputs {
+                                max-width: 600px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
