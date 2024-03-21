@@ -805,6 +805,150 @@ footer {
     }
 }
 
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 900px;
+    }
+
+    .nav-contact {
+        a {
+            display: block;
+        }
+    }
+
+    main {
+        align-items: center;
+
+        .hero {
+            height: 600px;
+
+            .hero-section {
+                .hero-info-left {
+
+                    h1 {
+                        font-size: 60px;
+
+                        .bold-h1-hero {
+                            font-size: 120px;
+                        }
+                    }
+
+                    p {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+
+            img {
+                display: none;
+            }
+
+            .hero-info-right {
+                display: none;
+
+                .long-line-hero {
+                    display: block;
+                }
+
+                li {
+                    display: block;
+                }
+            }
+        }
+
+        .aboutMe {
+            height: 1300px;
+
+            .container {
+                max-width: 900px;
+            }
+
+            .divAbout {
+
+                .about-me-info {
+
+                    .about-me-left {
+                        width: 700px;
+
+                        h2 {
+                            font-size: var(--h3);
+                        }
+                    }
+
+                    .about-me-right {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .experience {
+            height: 800px;
+
+            .divExperience {
+                margin-left: 20px;
+
+                .experience-left {
+                    max-width: 100%;
+                    width: 100%;
+
+                    .experience-section {
+                        margin-left: 0;
+                        max-width: 700px;
+                    }
+                }
+
+                .experience-right {
+                    display: none;
+                }
+            }
+        }
+
+        .education {
+            height: 800px;
+
+            .divEducation {
+                max-width: 100%;
+                margin-left: 20px;
+
+                .education-left {
+                    width: 100%;
+
+                    .education-section {
+                        margin-left: 0;
+                        max-width: 700px;
+                    }
+                }
+
+                .education-right {
+                    display: none;
+                }
+            }
+        }
+
+        .contact {
+            height: 1000px;
+            width: 100%;
+
+            .parallax {
+                .container {
+                    .contact-container {
+                        max-width: 100%;
+                        height: 700px;
+
+                        .contact-right {
+                            .contact-inputs {
+                                max-width: 600px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
 @media screen and (max-width: 768px) {
     .container {
         max-width: 700px;
@@ -935,6 +1079,219 @@ footer {
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        max-width: 350px;
+    }
+
+    header {
+        nav {
+            img {
+                height: 50px;
+            }
+
+            ul {
+                width: 250px;
+
+                li {
+                    a {
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            .nav-contact {
+                a {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    main {
+        .hero {
+            height: 400px;
+
+            .hero-section {
+                .hero-info-left {
+
+                    h1 {
+                        font-size: 35px;
+
+                        .bold-h1-hero {
+                            font-size: 55px;
+                        }
+                    }
+
+                    p {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+
+        .aboutMe {
+            height: 1200px;
+
+            .container {
+                max-width: 350px;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+            .divAbout {
+                max-width: 300px;
+
+                .about-me-info {
+                    .about-me-left {
+                        width: 100%;
+                        margin-top: 50px;
+
+                        p {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+
+            .divSkills {
+                margin-top: 0;
+
+                .skill-section {
+                    .skill-card {
+                        height: 150px;
+                        width: 150px;
+                        padding: 15px 15px;
+
+                        .card-container {
+                            max-width: 150px;
+                            height: 150px;
+
+                            img {
+                                height: 40px;
+                            }
+
+                            h5 {
+                                width: 150px;
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .experience {
+            max-width: 100%;
+            height: 900px;
+
+            .divExperience {
+                .experience-left {
+                    max-width: 300px;
+
+                    h2 {
+                        margin-bottom: 100px;
+                    }
+                }
+            }
+        }
+
+        .experience {
+            height: 1350px;
+
+            .divExperience {
+                display: flex;
+
+                .experience-left {
+                    height: auto;
+
+                    h2 {
+                        margin-bottom: 0;
+                    }
+
+                    .experience-section {
+                        max-height: 550px;
+                    }
+                }
+
+                .experience-right {
+                    display: none;
+                }
+            }
+        }
+
+        .education {
+            height: 1000px;
+
+            .divEducation {
+
+                .education-left {
+                    width: 100%;
+
+                    p {
+                        max-width: 250px;
+                    }
+                }
+
+                .education-right {
+                    display: none;
+                }
+            }
+        }
+
+        .contact {
+            .parallax {
+                .container {
+                    .contact-container {
+                        width: 100%;
+                        height: 750px;
+
+                        .contact-right {
+                            .contact-inputs {
+                                max-width: 275px;
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        .divFooter {
+            height: 250px;
+
+            .footerHyperlinks {
+                .Hyperlinks {
+                    ul {
+                        display: flex;
+                        width: 100%;
+                        justify-content: space-between;
+                        flex-direction: column;
+                        gap: 15px;
+                    }
+                }
+
+                .SocialLinks {
+                    display: none;
+                }
+            }
+        }
+
+        .divCopyright {
+            height: 75px;
+
+            p {
+                font-size: 10px;
             }
         }
     }
