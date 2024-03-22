@@ -238,11 +238,11 @@
                             <input type="email" id="mail" name="mail" placeholder="Your Email*" class="contact-inputs"
                                 required>
                             <input type="text" id="phone" name="phone" placeholder="Your Phone Number"
-                                class="contact-inputs">
+                                class="contact-inputs" pattern="[0-9]{10,14}" required>
                             <input type="text" id="subject" name="subject" placeholder="Your Subject*"
                                 class="contact-inputs" required>
                             <textarea id="message" name="message" placeholder="How can I help you?"
-                                class="contact-inputs"></textarea>
+                                class="contact-inputs" required></textarea>
                             <button type="submit" name="submit">Submit</button>
                         </form>
                     </div>
