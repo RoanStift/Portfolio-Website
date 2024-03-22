@@ -25,7 +25,11 @@ function sendEmail() {
                     icon: "success"
                 });
             } else {
-                alert("ERROR: something went from while sending e-mail.");
+                Swal.fire({
+                    title: "ERROR",
+                    text: "Something went wrong, please try again.",
+                    icon: "error"
+                });
             }
         }
     );
