@@ -33,10 +33,14 @@ function sendEmail() {
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
-    sendEmail();
-    document.getElementById('name').value = "";
-    document.getElementById('mail').value = "";
-    document.getElementById('phone').value = "";
-    document.getElementById('subject').value = "";
-    document.getElementById('message').value = "";
+    if (form.checkValidity()) {
+        sendEmail();
+        form.reset();
+    } else {
+        Swal.fire({
+            title: "Validation Error",
+            text: "Please fill out all required fields correctly.",
+            icon: "error"
+        });
+    }
 });
