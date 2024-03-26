@@ -29,12 +29,13 @@ body {
 }
 
 .container {
-    max-width: 1600px;
+    max-width: 1400px;
     width: 100%;
     margin: 0 auto;
 }
 
 .reveal {
+    display: none;
     position: relative;
     transform: translateY(100px);
     opacity: 0;
@@ -42,6 +43,7 @@ body {
 }
 
 .reveal.active {
+    display: block;
     transform: translateY(0);
     opacity: 1;
 }
@@ -111,7 +113,6 @@ header {
 }
 
 main {
-
     .hero {
         display: flex;
         height: 800px;
@@ -146,7 +147,7 @@ main {
                         text-transform: none;
                         color: var(--brandcolor);
                         font-weight: 500;
-                        font-size: 120px;
+                        font-size: 115px;
                     }
                 }
 
@@ -186,14 +187,10 @@ main {
                         transition: 0.25s;
                     }
                 }
-
-                img {
-                    width: 500px;
-                }
             }
 
             img {
-                width: 750px;
+                width: 690px;
             }
 
             .hero-info-right {
@@ -267,6 +264,7 @@ main {
                 justify-content: center;
 
                 .about-me-left {
+                    display: block;
                     width: 60%;
 
                     h2 {
@@ -404,6 +402,7 @@ main {
                 gap: 50px;
 
                 h2 {
+                    display: block;
                     font-size: var(--h2);
                     color: #fff;
                     font-weight: 600;
@@ -469,6 +468,7 @@ main {
                 justify-content: center;
 
                 .reveal {
+                    display: block;
                     opacity: 0;
                     transform: translateX(100%);
                     transition: opacity 1s ease, transform 1s ease;
@@ -508,6 +508,7 @@ main {
                 gap: 50px;
 
                 h2 {
+                    display: block;
                     font-size: var(--h2);
                     color: #fff;
                     font-weight: 600;
@@ -580,6 +581,7 @@ main {
                 justify-content: center;
 
                 .reveal {
+                    display: block;
                     opacity: 0;
                     transform: translateX(100%);
                     transition: opacity 1s ease, transform 1s ease;
@@ -601,11 +603,10 @@ main {
 
     .contact {
         height: 1100px;
-        width: 100%;
+        max-width: 100%;
 
         .parallax {
             height: 100%;
-            width: 100%;
             background: url("ContactBg.png") rgb(0, 0, 0, 0.5);
             background-blend-mode: multiply;
             background-position: center;
@@ -622,7 +623,7 @@ main {
                 .contact-container {
                     user-select: none;
                     height: 800px;
-                    width: 60%;
+                    max-width: 1000px;
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -634,7 +635,6 @@ main {
                     .contact-right {
                         display: flex;
                         flex-direction: column;
-                        align-items: start;
                         gap: 25px;
                         margin: 50px;
 
@@ -651,7 +651,7 @@ main {
                         .contact-inputs {
                             display: flex;
                             align-items: center;
-                            width: 750px;
+                            width: 800px;
                             height: 50px;
                             border: none;
                             outline: none;
@@ -675,7 +675,7 @@ main {
 
                         button {
                             display: flex;
-                            align-items: center;
+                            align-self: self-start;
                             padding: 15px 35px;
                             font-size: 16px;
                             color: white;
@@ -697,7 +697,6 @@ main {
                     }
                 }
             }
-
         }
     }
 }
@@ -715,6 +714,7 @@ footer {
         .footerLogo {
 
             .reveal {
+                display: flex;
                 opacity: 0;
                 transform: translateX(-100px);
                 transition: opacity 1s ease, transform 1s ease;
@@ -805,9 +805,9 @@ footer {
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
     .container {
-        max-width: 900px;
+        max-width: 800px;
     }
 
     .nav-contact {
@@ -886,7 +886,7 @@ footer {
             height: 800px;
 
             .divExperience {
-                margin-left: 20px;
+                padding-left: 20px;
 
                 .experience-left {
                     max-width: 100%;
@@ -909,7 +909,7 @@ footer {
 
             .divEducation {
                 max-width: 100%;
-                margin-left: 20px;
+                padding-left: 20px;
 
                 .education-left {
                     width: 100%;
@@ -949,9 +949,9 @@ footer {
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
     .container {
-        max-width: 700px;
+        max-width: 500px;
     }
 
     .nav-contact {
@@ -1002,7 +1002,7 @@ footer {
             height: 1600px;
 
             .container {
-                max-width: 700px;
+                width: 600px;
             }
 
             .divAbout {
@@ -1025,15 +1025,18 @@ footer {
         }
 
         .experience {
-            height: 800px;
+            width: 100%;
+            height: 900px;
 
             .divExperience {
+                width: 100%;
 
                 .experience-left {
-                    width: 100%;
+                    width: 90%;
 
                     .experience-section {
-                        margin-left: 0;
+                        margin-bottom: 50px;
+                        padding: 0;
                     }
                 }
 
@@ -1044,15 +1047,24 @@ footer {
         }
 
         .education {
-            height: 800px;
+            width: 100%;
+            height: 900px;
 
             .divEducation {
+                width: 100%;
 
                 .education-left {
                     width: 100%;
 
                     .education-section {
                         margin-left: 0;
+
+                        .section-content {
+                            width: 95%;
+                        }
+                        p {
+                            max-width: 95%;
+                        }
                     }
                 }
 
@@ -1069,16 +1081,50 @@ footer {
             .parallax {
                 .container {
                     .contact-container {
-                        width: 100%;
+                        width: 90%;
                         height: 700px;
 
                         .contact-right {
+                            width: 100%;
+
                             .contact-inputs {
-                                max-width: 600px;
+                                width: 100%;
                             }
                         }
                     }
                 }
+            }
+        }
+    }
+
+    footer {
+        .divFooter {
+            height: 250px;
+
+            .footerHyperlinks {
+
+                .Hyperlinks {
+                    ul {
+                        display: flex;
+                        width: 100%;
+                        justify-content: space-between;
+                        flex-direction: column;
+                        gap: 15px;
+                    }
+                }
+
+                .SocialLinks {
+                    display: none;
+                    flex-direction: column;
+                }
+            }
+        }
+
+        .divCopyright {
+            height: 75px;
+
+            p {
+                font-size: 10px;
             }
         }
     }
@@ -1218,6 +1264,7 @@ footer {
                     }
 
                     .experience-section {
+                        margin-bottom: 0;
                         max-height: 550px;
                     }
                 }
